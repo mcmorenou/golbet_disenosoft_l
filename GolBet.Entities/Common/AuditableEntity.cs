@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GolBet.Entities.Common
+﻿namespace GolBet.Entities.Common
 {
     /// <summary>
     /// Base class for all domain entities.
@@ -22,10 +16,5 @@ namespace GolBet.Entities.Common
 
         /// <summary>Logical state. Inactive entities are hidden, not deleted.</summary>
         public bool IsActive { get; set; } = true;
-    }
-
-    internal class AuditableEntity
-    {
-        public int Id { get; set; }
     }
 }
